@@ -74,7 +74,7 @@ a:hover{
 
 main {
 overflow: hidden;
-margin-top: 12px;
+margin-top: 10px;
 }
 
 main
@@ -82,13 +82,31 @@ article
 form {
     display: inline-block;
     border: 1px solid #9c9c9d;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-left: 3px;
     margin-bottom: 15px;
+}
+
+main
+article
+form
+p {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 900;
+    color: #154467;
+    text-align: center;
+}
+
+form
+input {
+    background-color: rgba(0, 255, 255, 1);
+    border: 0;
 }
 
 .search--car {
     width: 414px;
-height: 134px;
+height: 133px;
 }
 
 .search--tires {
@@ -155,26 +173,13 @@ footer
 a {
     display: inline-block;
     font-family: Arial;
-font-size: 12px;
-font-weight: 400;
-letter-spacing: 0.3px;
-line-height: 18px;
-text-align: center;
-font-family: Arial;
-color: #68757a;
-font-size: 12px;
-font-weight: 400;
-letter-spacing: 0.3px;
-line-height: 18px;
-text-align: center;
-font-family: Arial;
-color: #bec6c9;
-font-size: 12px;
-font-weight: 400;
-letter-spacing: 0.3px;
-line-height: 18px;
-text-align: center;
-text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    text-align: center;
+    color: #68757a;
+    text-decoration: none;
 }
 
 footer
