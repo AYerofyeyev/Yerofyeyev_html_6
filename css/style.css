@@ -203,11 +203,16 @@ nav {
     width: 772px;
 height: 27px;
 background: linear-gradient(to top, #000 0%, #2a2e32 85%, #576068);
-/* (0deg, #000000 0%, #4c535a 87%, #576068 100%); */
 border: 1px solid #0d1642;
 border-radius: 5px;
 box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+.menu {
+  position: relative;
+}
+
+
 
 nav
 a {
@@ -219,7 +224,7 @@ a {
     font-size: 14px;
     text-decoration: none;
     color: #b1bcc0;
-    background-image: linear-gradient(totop, #0c3357, #25617b);
+    background-image: linear-gradient(to top, #0c3357, #25617b);
     border-radius: 40px;
 }
 
@@ -231,6 +236,34 @@ a:first-child {
 nav
 a:hover{
 
+}
+
+.goods {
+  font-family: Arial;
+color: #929b9f;
+font-size: 11px;
+font-weight: 400;
+letter-spacing: 0.44px;
+text-align: left;
+}
+
+.summ {
+  font-family: Arial;
+color: #8a9296;
+font-size: 11px;
+font-weight: 400;
+letter-spacing: 0.44px;
+text-align: left;
+}
+
+.menu
+span {
+  font-family: Arial;
+color: #0d5a8f;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.48px;
+text-align: left;
 }
 
 /* CONTENT SECTION */
