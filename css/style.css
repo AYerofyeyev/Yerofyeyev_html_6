@@ -100,7 +100,7 @@ p {
 
 form
 input {
-    background-color: rgba(0, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
     border: 0;
 }
 
@@ -119,13 +119,13 @@ height: 136px;
 height: 135px;
 }
 
-.left {
+.catalog {
     width: 181px;
     height: 415px;
     float: left;
 }
 
-.right {
+.brands--filter {
     width: 181px;
     height: 415px;
     float: right;
