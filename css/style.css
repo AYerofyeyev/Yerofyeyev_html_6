@@ -18,24 +18,187 @@
 /* HEADER */
 
 header {
-    width: 910px;
+  width: 910px;
+}
+
+.shapka {
+  height: 54px;
+  width: 496px;
+  position: relative;
+}
+
+.handset {
+  position: absolute;
+  background: linear-gradient(0deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  border-radius: 50%;
+  margin: 22px 0 0 7px;
+  height: 21px;
+  width: 21px;
+}
+
+.handset
+img {
+  margin: 0 0 0 3px;
+}
+
+.phoneNumbers {
+  position: absolute;
+  font-family: Arial;
+  color: #5e696d;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  line-height: 28px;
+  text-align: center;
+  margin: 19px 0 0 32px;
+}
+
+.enter {
+  position: absolute;
+  width: 496px;
+  height: 27px;
+  margin: 17px 0 0 314px;
+  box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);
+  background: linear-gradient(180deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  border-radius: 5px;
+}
+
+.enter
+img {
+  position: absolute;
+  margin: 5px 0 0 7px;
 }
 
 .login {
-    width: 496px;
-height: 27px;
+  font-family: 'Lucida Sans Unicode';
+  padding:
+  color: #97a2a6;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  position: absolute;
+  margin: 4px 0 0 24px;
+  height: 14px;
+  width: 109px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:  #9ba1a3;
+  padding-left: 4px;
 }
 
+.password {
+  font-family: 'Lucida Sans Unicode';
+  color: #97a2a6;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  position: absolute;
+  margin: 4px 0 0 145px;
+  border-style: solid;
+  height: 14px;
+  border-width: 1px;
+  border-color:  #9ba1a3;
+  width: 109px;
+  padding-left: 4px;
+}
+
+.vhod {
+  position: absolute;
+  display: inline-block;
+  margin: 0 0 0 267px;
+  font-family: 'Lucida Sans Unicode';
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.registration {
+  position: absolute;
+  display: inline-block;
+  margin: 9px 0 0 298px;
+  padding-left: 4px;
+  font-family: 'Lucida Sans Unicode';
+  color: #fff;
+  font-size: 11px;
+  border-left: 1px solid #fff;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.registration
+span {
+  margin-left: -1px;
+}
+
+.forgot {
+  position: absolute;
+  margin: 6px 0 0 391px;
+  font-family: 'Lucida Sans Unicode';
+color:  #bfbfbf;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+text-align: left;
+text-decoration: none;
+border-bottom: 1px solid #bfbfbf;
+}
+
+.small--pics {
+position: absolute;
+  margin: 18px 0 0 826px;
+  border-style: solid;
+border-width: 1px;
+border-color: #bdc4c7;
+width: 75px;
+height: 21px;
+border-radius: 14px;
+text-align: center;
+box-shadow: 1px 2px 2px 0px rgba(150, 150, 150, 0.25);
+}
+
+.small--pics
+a {
+  text-decoration: none;
+}
+
+.home {
+  position: absolute;
+  margin: 3px 0 0 -30px;
+}
+
+.network {
+  position: absolute;
+  margin: 4px 0 0 -10px;
+}
+
+.email {
+  position: absolute;
+  margin: 5px 0 0 13px;
+}
+
+
+
+
 .banner {
-    width: 910px;
-height: 237px;
-background-image: url(../img/banner.png);
+
+}
+
+.banner
+a {
+  display: inline-block;
 }
 
 /* MAIN MENU */
 
 nav {
-    margin-top: 6px;
+    margin-top: 3px;
     padding: 3px 13px 3px 125px;
     width: 772px;
 height: 27px;
