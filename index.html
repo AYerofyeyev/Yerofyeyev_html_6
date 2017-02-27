@@ -5,6 +5,9 @@
         <title>ZAZOR Шины Диски</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+        <script src="js/script.js" charset="utf-8"></script>
     </head>
     <body>
     <div class="container">
@@ -40,11 +43,24 @@
                   </a>
                 </div>
             </div>
-            <div class="banner">
-              <a href="#">
-                <img src="img/banner.png" alt="zazor.com.ua">
-              </a>
+            <!-- jQuery Caruosel -->
+            <div class="jcarousel">
+              <ul class="jcarousel-list">
+                <li class="jcarousel-item">
+                  <!--a href="#"-->
+                    <img src="img/banner1.png" alt="zazor.com.ua">
+                  <!--/a-->
+                </li>
+                <li class="jcarousel-item">
+                  <img src="img/banner2.png" alt="">
+                </li>
+                <li class="jcarousel-item">
+                  <img src="img/banner3.png" alt="">
+                </li>
+              </ul>
             </div>
+            <a class="jcarousel-prev" href="#"><</a>
+            <a class="jcarousel-next" href="#">></a>
         </header>
 
         <nav>

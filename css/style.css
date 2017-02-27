@@ -182,16 +182,45 @@ a {
   margin: 5px 0 0 13px;
 }
 
-
-
-
-.banner {
-
+.jcarousel {
+  position: relative;
+  overflow: hidden;
 }
 
-.banner
+.jcarousel
+ul {
+  position: relative;
+  width: 2727px;
+}
+
+.jcarousel
+li {
+  float: left;
+}
+
+.jcarousel
 a {
   display: inline-block;
+}
+
+.jcarousel-prev {
+  position: absolute;
+  margin: -116px 0 0 -30px;
+  padding: 5px;
+  color: #fff;
+  background: linear-gradient(to top, #000 0%, #2a2e32 85%, #576068);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.jcarousel-next {
+  position: absolute;
+  margin: -116px 0 0 939px;
+  padding: 5px;
+  color: #fff;
+  background: linear-gradient(to top, #000 0%, #2a2e32 85%, #576068);
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 /* MAIN MENU */
