@@ -215,7 +215,7 @@ a {
 
 .jcarousel-next {
   position: absolute;
-  margin: -116px 0 0 939px;
+  margin: -116px 0 0 921px;
   padding: 5px;
   color: #fff;
   background: linear-gradient(to top, #000 0%, #2a2e32 85%, #576068);
@@ -243,6 +243,8 @@ a {
 
 .menu--link {
     display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 6px;
     color: #b1bcc0;
     line-height: 13px;
     font-family: "Lucida Sans Unicode", Arial, sans-serif;
@@ -276,6 +278,29 @@ a {
   border-radius: 40px;
   color: #fff;
 }
+
+.submenu {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  background: linear-gradient(to top, #000 0%, #2a2e32 85%, #576068);
+  border: 1px solid #0d1642;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 175px;
+}
+
+.submenu
+.menu--link {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*.submenu:hover {
+  background: linear-gradient(to top, #0c3357, #25617b);
+  border-radius: 40px;
+  color: #fff;
+}*/
 
 .basket {
   position: absolute;
