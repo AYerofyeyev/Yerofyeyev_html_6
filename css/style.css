@@ -296,12 +296,6 @@ a {
   padding-right: 15px;
 }
 
-/*.submenu:hover {
-  background: linear-gradient(to top, #0c3357, #25617b);
-  border-radius: 40px;
-  color: #fff;
-}*/
-
 .basket {
   position: absolute;
   margin: -27px 0 0 683px;
@@ -357,29 +351,45 @@ a {
 /* CONTENT SECTION */
 
 main {
-overflow: hidden;
-margin-top: 10px;
+  margin-top: 10px;
+  position: relative;
 }
 
-main
+article {
+  position: relative;
+}
+
+article::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
 article
 form {
-    display: inline-block;
-    border: 1px solid #9c9c9d;
-    border-radius: 20px;
-    margin-left: 3px;
-    margin-bottom: 15px;
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #9c9c9d;
+  border-radius: 20px;
 }
 
-main
-article
-form
-p {
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: 900;
-    color: #154467;
-    text-align: center;
+.name {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 900;
+  color: #154467;
+  text-align: left;
+}
+
+.search--car
+.name {
+  margin: 1px 0 0 126px;
+}
+
+.search--car
+.name
+span {
+  margin-left: 1px;
 }
 
 form
@@ -389,38 +399,45 @@ input {
 }
 
 .search--car {
-    width: 414px;
-height: 133px;
+  margin: 1px 0 0 4px;
+  height: 133px;
+  width: 414px;
 }
 
 .search--tires {
-    width: 192px;
-height: 136px;
+  position: absolute;
+  margin: 0px 0 0 433px;
+  height: 134px;
+  width: 192px;
 }
 
 .search--wheels {
-    width: 268px;
-height: 135px;
+  position: absolute;
+  margin: -1px 0 0 636px;
+  height: 135px;
+  width: 266px;
 }
 
 .catalog {
-    width: 181px;
-    height: 415px;
-    float: left;
+  float: left;
+  margin: 148px 0 0 0;
+  height: 415px;
+  width: 181px;
 }
 
 .brands--filter {
-    width: 181px;
-    height: 415px;
-    float: right;
+  float: right;
+  margin: 1px 0 0 0;
+  height: 415px;
+  width: 181px;
 }
 
 .content {
-    margin: 0 181px;
-    /* width: 527px; */
-height: 628px;
-background: linear-gradient(to top, #93a7b0, #e5e7e8);
-box-shadow: 0px -1px 1px 1px #e5e7e8, 0px 1px 1px 1px #93a7b0;
+  margin: 153px 194px 0;
+  background: linear-gradient(to top, #93a7b0, #e5e7e8);
+  box-shadow: 0px -1px 1px 1px #e5e7e8, 0px 1px 1px 1px #93a7b0;
+  height: 624px;
+  /* width: 527px; */
 }
 
 
