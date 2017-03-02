@@ -17,5 +17,5 @@ $(function() {
         $(this).children('.submenu').slideUp(150);
       }
     );
-    
+    $("select").styler();
 });

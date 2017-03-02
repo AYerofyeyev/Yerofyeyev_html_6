@@ -514,12 +514,33 @@ span {
 }
 
 .input--box1
-select {
-  position: absolute;
+.select1 {
+  margin: -11px 0 0 93px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 101px;
 }
 
-.select1 {
-  margin: -12px 0 0 93px;
+.input--box1
+.select2 {
+  margin: 11px 0 0 93px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 101px;
+}
+
+.input--box1
+.select3 {
+  margin: 33px 0 0 92px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 58px;
+}
+
+.input--box1
+.select4 {
+  margin: 55px 0 0 93px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
   height: 17px;
   width: 101px;
 }
