@@ -288,6 +288,7 @@ a {
   border-radius: 5px;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
   width: 175px;
+  z-index: 1;
 }
 
 .submenu
@@ -355,6 +356,8 @@ main {
   position: relative;
 }
 
+/* FILTER LINE */
+
 article {
   position: relative;
 }
@@ -371,6 +374,7 @@ form {
   position: absolute;
   border: 1px solid #9c9c9d;
   border-radius: 20px;
+  box-shadow: 2px 4px 5px 0px rgba(104, 104, 104, 0.75);
 }
 
 .name {
@@ -381,6 +385,14 @@ form {
   text-align: left;
 }
 
+/* SEARCH FOR CAR */
+
+.search--car {
+  margin: 1px 0 0 4px;
+  height: 133px;
+  width: 414px;
+}
+
 .search--car
 .name {
   margin: 1px 0 0 126px;
@@ -389,34 +401,169 @@ form {
 .search--car
 .name
 span {
+  margin-left: 2px;
+}
+
+.form--header {
+  color: #154468;
+  line-height: 28px;
+  text-align: left;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.25px;
+}
+
+.header2 {
+  float:left;
+  margin: -18px 0 0 19px;
+}
+
+.header2
+span {
   margin-left: 1px;
 }
 
-form
-input {
-    background-color: rgba(255, 255, 255, 1);
-    border: 0;
+.header3 {
+  float:right;
+  margin: -20px 21px 0 0;
 }
 
-.search--car {
-  margin: 1px 0 0 4px;
-  height: 133px;
-  width: 414px;
+.text--bold {
+  font-family: Arial;
+  color:  #000000;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 8px;
+  text-align: left;
+}
+
+.text--thin {
+  font-family: Arial;
+  color:  #78868c;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 8px;
+  text-align: left;
+}
+
+.text--box1 {
+  float: left;
+  margin: 14px 0 0 -42px;
+}
+
+.line1 {
+  position: absolute;
+  margin: -8px 0 0 34px;
+  letter-spacing: -0.75px;
+}
+
+.line2 {
+  position: absolute;
+  margin: 8px 0 0 0;
+}
+
+.line3 {
+  position: absolute;
+  margin: 16px 0 0 0;
+  letter-spacing: -0.3px;
+}
+
+.line3
+span {
+  margin-left: -2px;
+}
+
+.line4 {
+  position: absolute;
+  margin: 30px 0 0 0;
+  letter-spacing: 0.5px;
+}
+
+.line5 {
+  position: absolute;
+  margin: 38px 0 0 0;
+  letter-spacing: -0.5px;
+}
+
+.line6 {
+  position: absolute;
+  margin: 56px 0 0 0;
+}
+
+.line6
+span {
+  margin-left: -1px;
+}
+
+.text--box2 {
+  float: right;
+  margin: 12px 101px 0 0;
+}
+
+.text--box2
+.line4
+span {
+  margin-left: -2px;
+}
+
+.input--box1 {
+  position: absolute;
+}
+
+.input--box1
+select {
+  position: absolute;
+}
+
+.select1 {
+  margin: -12px 0 0 93px;
+  height: 17px;
+  width: 101px;
+}
+
+/* SEARCH OF TIRES */
+
+.search--tires
+.name {
+  margin: 3px 0 0 10px;
 }
 
 .search--tires {
-  position: absolute;
   margin: 0px 0 0 433px;
   height: 134px;
   width: 192px;
 }
 
+/* SEARCH OF WHEELS */
+
 .search--wheels {
-  position: absolute;
   margin: -1px 0 0 636px;
-  height: 135px;
+  border-radius: 18px;
+  height: 134px;
   width: 266px;
 }
+
+.search--wheels
+.name {
+  margin: 4px 0 0 8px;
+  letter-spacing: 1px;
+}
+
+.search--wheels
+span {
+  margin-left: 3px;
+}
+
+form
+input {
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
+}
+
+/* LEFT ASIDE */
 
 .catalog {
   float: left;
@@ -425,12 +572,16 @@ input {
   width: 181px;
 }
 
+/* RIGHT ASIDE */
+
 .brands--filter {
   float: right;
   margin: 1px 0 0 0;
   height: 415px;
   width: 181px;
 }
+
+/* CENTRAL BLOCK */
 
 .content {
   margin: 153px 194px 0;
