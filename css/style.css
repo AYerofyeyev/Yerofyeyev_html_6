@@ -288,7 +288,7 @@ a {
   border-radius: 5px;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
   width: 175px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .submenu
@@ -707,7 +707,7 @@ span {
 .search--tires
 .select3 {
   margin: 31px 0 0 58px;
-  padding-left: 3px;
+  padding: 1px 0 0 3px;
   color: #000000;
   line-height: 17px;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
@@ -735,14 +735,238 @@ span {
 }
 
 .search--wheels
-span {
-  margin-left: 3px;
+.text--box1 {
+  float: left;
+  margin: 10px 0 0 16px;
+  width: 72px;
 }
 
-form
-input {
-  background-color: rgba(255, 255, 255, 1);
-  border: 0;
+.search--wheels
+.line1 {
+  position: absolute;
+  margin: 0;
+  letter-spacing: .9px;
+}
+
+.search--wheels
+.line2 {
+  position: absolute;
+  margin: 0 0 0 53px;
+}
+
+.search--wheels
+.line3 {
+  position: absolute;
+  margin: 16px 0 0 0;
+  letter-spacing: .7px;
+}
+
+.search--wheels
+.line4 {
+  position: absolute;
+  display: inline-block;
+  margin: 25px 0 0 0;
+  letter-spacing: .4px;
+  width: 84px;
+}
+
+.search--wheels
+.line4
+span {
+  display: inline-block;
+  position: absolute;
+  margin: 8px 0 0 -56px;
+  padding-top: 1px;
+  letter-spacing: .2px;
+}
+
+.search--wheels
+.line5 {
+  position: absolute;
+  margin: 46px 0 0 0;
+  letter-spacing: .8px;
+}
+
+.search--wheels
+.line6 {
+  position: absolute;
+  margin: 56px 0 0 0;
+  width: 84px;
+}
+
+.search--wheels
+.line6
+span {
+  display: inline-block;
+  margin: 2px 0 0 0;
+}
+
+.search--wheels
+.input--box1 {
+  position: absolute;
+  margin: -12px 0 0 100px;
+  height: 106px;
+  border-right: 1px solid #bdc6ca;
+  width: 75px;
+}
+
+.search--wheels
+.input--box1
+.select1 {
+  position: absolute;
+  margin: 17px 0 0 6px;
+  padding:1px 0 0 4px;
+  line-height: 17px;
+  color: #000;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 53px;
+}
+
+.search--wheels
+.input--box1
+.select2 {
+  position: absolute;
+  margin: 49px 0 0 6px;
+  padding-left: 5px;
+  line-height: 17px;
+  color: #000;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 44px;
+}
+
+.search--wheels
+.input--box1
+.select3 {
+  position: absolute;
+  margin: 81px 0 0 6px;
+  padding-left: 2px;
+  line-height: 17px;
+  color: #000;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 1.1px;
+  width: 55px;
+}
+
+.search--wheels
+.input--box2 {
+  float: right;
+  position: absolute;
+  margin: 1px 0 0 154px;
+}
+
+.search--wheels
+.line7 {
+  position: absolute;
+  margin: -10px 0 0 32px;
+  color:  #000;
+  line-height: 8px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 9px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.search--wheels
+.line8 {
+  position: absolute;
+  margin: -1px 0 0 34px;
+  color:  #77858b;
+  line-height: 8px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 8px;
+  font-weight: 400;
+  text-align: left;
+  transform: scaleX(1.1181);
+}
+
+.search--wheels
+.input--box2
+.select4 {
+  position: absolute;
+  margin: 26px 0 0 34px;
+  padding-left: 2px;
+  line-height: 17px;
+  color: #000;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 1.1px;
+  width: 54px;
+}
+
+.search--wheels
+.line9 {
+  position: absolute;
+  margin: 51px 0 0 33px;
+  color:  #000;
+  line-height: 8px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 9px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.search--wheels
+.input--box2
+.line10 {
+  position: absolute;
+  margin: 60px 0 0 35px;
+  color:  #77858b;
+  line-height: 8px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 8px;
+  font-weight: 400;
+  text-align: left;
+  transform: scaleX(1.1181);
+  width: 70px;
+}
+
+.search--wheels
+.input--box2
+.line10
+span {
+  letter-spacing: .1px;
+}
+
+.search--wheels
+.input--box2
+.select5 {
+  position: absolute;
+  margin: 71px 0 0 34px;
+  padding-left: 2px;
+  line-height: 17px;
+  color: #000;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 1.1px;
+  width: 54px;
+}
+
+.search--wheels
+.search {
+  position: absolute;
+  margin: 94px 0 0 109px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #154467;
+  color: #154467;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* LEFT ASIDE */

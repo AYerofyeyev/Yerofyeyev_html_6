@@ -35,7 +35,7 @@
 				selectSearchNotFound: 'Совпадений не найдено',
 				selectSearchPlaceholder: 'Поиск...',
 				selectVisibleOptions: 0,
-				singleSelectzIndex: '100',
+				singleSelectzIndex: '1',
 				selectSmartPositioning: true,
 				locale: 'ru',
 				locales: {
