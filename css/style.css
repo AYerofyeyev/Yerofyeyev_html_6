@@ -515,7 +515,7 @@ span {
 
 .input--box1
 .select1 {
-  margin: -11px 0 0 93px;
+  margin: 8px 0 0 93px;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
   height: 17px;
   width: 101px;
@@ -523,7 +523,7 @@ span {
 
 .input--box1
 .select2 {
-  margin: 11px 0 0 93px;
+  margin: 30px 0 0 93px;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
   height: 17px;
   width: 101px;
@@ -531,7 +531,7 @@ span {
 
 .input--box1
 .select3 {
-  margin: 33px 0 0 92px;
+  margin: 52px 0 0 92px;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
   height: 17px;
   width: 58px;
@@ -539,11 +539,63 @@ span {
 
 .input--box1
 .select4 {
-  margin: 55px 0 0 93px;
+  margin: 74px 0 0 93px;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
   height: 17px;
   width: 101px;
 }
+
+.input--box2 {
+  position: absolute;
+}
+
+.input--box2
+.select1 {
+  margin: 6px 0 0 298px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 101px;
+}
+
+.input--box2
+.select2 {
+  margin: 28px 0 0 298px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 101px;
+}
+
+.input--box2
+.select3 {
+  margin: 50px 0 0 297px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 58px;
+}
+
+.input--box2
+.select4 {
+  margin: 72px 0 0 298px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  width: 101px;
+}
+
+.search--car
+.search {
+  position: absolute;
+  margin: 95px 0 0 283px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #154467;
+  color: #154467;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  text-align: center;
+}
+
 
 /* SEARCH OF TIRES */
 
@@ -556,6 +608,115 @@ span {
   margin: 0px 0 0 433px;
   height: 134px;
   width: 192px;
+}
+
+.search--tires
+.search {
+  position: absolute;
+  margin: 94px 0 0 122px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #154467;
+  color: #154467;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.search--tires
+.header1 {
+  position: absolute;
+  margin: 6px 0 0 13px;
+  color: #000;
+  line-height: 28px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 10px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.search--tires
+.header2 {
+  position: absolute;
+  margin: 26px 0 0 45px;
+  color: #000;
+  line-height: 28px;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  transform: scaleY(0.9);
+}
+
+.search--tires
+.header3 {
+  position: absolute;
+  margin: 45px 0 0 14px;
+  color: #000;
+  line-height: 28px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 10px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.search--tires
+.header4 {
+  position: absolute;
+  margin: 3px 0 0 115px;
+  color: #000;
+  line-height: 28px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.search--tires
+.select1 {
+  margin: 7px 0 0 58px;
+  padding-left: 4px;
+  color: #000000;
+  line-height: 17px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 48px;
+}
+
+.search--tires
+.select2 {
+  margin: 7px 0 0 124px;
+  padding-left: 4px;
+  color: #000000;
+  line-height: 17px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 48px;
+}
+
+.search--tires
+.select3 {
+  margin: 31px 0 0 58px;
+  padding-left: 3px;
+  color: #000000;
+  line-height: 17px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  height: 17px;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  width: 42px;
 }
 
 /* SEARCH OF WHEELS */
