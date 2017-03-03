@@ -943,15 +943,17 @@ span {
 .select5 {
   position: absolute;
   margin: 71px 0 0 34px;
-  padding-left: 2px;
+  padding: 1px 0 0 2px;
   line-height: 17px;
   color: #000;
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,.5);
   font-family: Arial;
   font-size: 11px;
   font-weight: 400;
   text-align: left;
   letter-spacing: 1.1px;
   width: 54px;
+  z-index: 10;
 }
 
 .search--wheels
