@@ -1122,9 +1122,14 @@ div {
 }
 
 .brands--filter
+input[type=checkbox] {
+  position: absolute;
+}
+
+.brands--filter
 .header4 {
   position: absolute;
-  margin: 109px 0 0 11px;
+  margin: 112px 0 0 11px;
   padding: 1px 0 0 30px;
   border: 1px solid #79878d;
   border-radius: 12px;
@@ -1158,7 +1163,7 @@ div {
 .brands--filter
 .check--button {
   position: absolute;
-  margin: 230px 0 0 20px;
+  margin: 233px 0 0 20px;
   padding: 7px 0 0 14px;
   border: 1px solid #a7abae;
   border-radius: 12px;
