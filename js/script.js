@@ -18,4 +18,5 @@ $(function() {
       }
     );
     $("select").styler();
+    $("input").styler();
 });
