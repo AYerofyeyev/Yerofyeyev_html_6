@@ -19,4 +19,7 @@ $(function() {
     );
     $("select").styler();
     $("input").styler();
+    $(".check--button").hover({
+      .style.cursor = "pointer"
+    });
 });

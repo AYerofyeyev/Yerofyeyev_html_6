@@ -771,13 +771,6 @@ span {
   margin: -12px 0 0 14px;
 }
 
-/*.search--tires
-input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}*/
-
 /* SEARCH OF WHEELS */
 
 .search--wheels {
@@ -1043,9 +1036,147 @@ span {
 
 .brands--filter {
   float: right;
-  margin: 1px 0 0 0;
+  position: relative;
+  margin: 148px 0 0 0;
   height: 415px;
   width: 181px;
+}
+
+.brands--filter
+.header2 {
+  margin: 5px 0 0 -3px;
+  padding-left: 30px;
+  border: 1px solid #79878d;
+  border-radius: 40px;
+  box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);
+  height: 25px;
+  width: 151px;
+}
+
+.brands--filter
+h2 {
+  color: #0c3256;
+  line-height: 25px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.brands--filter
+.header2::before {
+  position: absolute;
+  margin: 0 0 0 -28px;
+  background: url('../img/sheet.png') no-repeat center ,  linear-gradient(0deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  border-radius: 50%;
+  content: '';
+  height: 23px;
+  width: 23px;
+}
+
+.brands--filter
+.header3 {
+  position: absolute;
+  margin: 46px 0 0 12px;
+  padding-left: 30px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  /*box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);*/
+  height: 26px;
+  width: 104px;
+}
+
+.brands--filter
+h3 {
+  color: #0c3256;
+  line-height: 26px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.brands--filter
+.header3
+.wheel {
+  position: absolute;
+  margin: -24px 0 0 -26px;
+  background: #114165;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+}
+
+.brands--filter
+.header3
+.wheel
+div {
+  position: absolute;
+  margin: 5px 0 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.brands--filter
+.header4 {
+  position: absolute;
+  margin: 109px 0 0 11px;
+  padding: 1px 0 0 30px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  height: 25px;
+  width: 105px;
+}
+
+.brands--filter
+.header4
+.wheel {
+  position: absolute;
+  margin: -24px 0 0 -27px;
+  background: #114165;
+  border-radius: 50%;
+  height: 22px;
+  width: 21px;
+}
+
+.brands--filter
+.header4
+.wheel
+div {
+  position: absolute;
+  margin: 5px 0 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 11px;
+}
+
+.brands--filter
+.check--button {
+  position: absolute;
+  margin: 230px 0 0 20px;
+  padding: 7px 0 0 14px;
+  border: 1px solid #a7abae;
+  border-radius: 12px;
+  background: -webkit-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  background: -moz-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  background: -o-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  background: -ms-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  background: linear-gradient(180deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  color: #e5e9ea;
+  box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);
+  height: 18px;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 67px;
 }
 
 /* CENTRAL BLOCK */
