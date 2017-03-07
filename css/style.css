@@ -1067,12 +1067,12 @@ h2 {
 .brands--filter
 .header2::before {
   position: absolute;
-  margin: 0 0 0 -28px;
-  background: url('../img/sheet.png') no-repeat center ,  linear-gradient(0deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  margin: 1px 0 0 -27px;
+  background: url('../img/sheet.png') no-repeat center ,  linear-gradient(180deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
   border-radius: 50%;
   content: '';
-  height: 23px;
-  width: 23px;
+  height: 22px;
+  width: 22px;
 }
 
 .brands--filter
