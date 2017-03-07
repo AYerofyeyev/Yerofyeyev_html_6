@@ -1044,7 +1044,7 @@ span {
 
 .brands--filter
 .header2 {
-  margin: 5px 0 0 -3px;
+  margin: 4px 0 0 -3px;
   padding-left: 30px;
   border: 1px solid #79878d;
   border-radius: 40px;
@@ -1078,7 +1078,7 @@ h2 {
 .brands--filter
 .header3 {
   position: absolute;
-  margin: 46px 0 0 12px;
+  margin: 45px 0 0 12px;
   padding-left: 30px;
   border: 1px solid #79878d;
   border-radius: 12px;
@@ -1122,14 +1122,125 @@ div {
 }
 
 .brands--filter
+label {
+  color: #465961;
+  line-height: 25px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 12.73px;
+  font-weight: 400;
+  text-align: left;
+  width: 52px;
+}
+
+.brands--filter
 .checkbox1 {
-  
+  position: absolute;
+  margin: 81px 0 0 -159px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.brands--filter
+.checkbox1  + label {
+  position: absolute;
+  margin: 76px 0 0 -180px;
+  padding: 0 0 0 46px;
+}
+
+.brands--filter
+.checkbox1:not(checked) + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat left;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox1:checked + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat right;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox2 {
+  position: absolute;
+  margin: 107px 0 0 -159px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.brands--filter
+.checkbox2  + label {
+  position: absolute;
+  margin: 101px 0 0 -180px;
+  padding: 0 0 0 46px;
+}
+
+.brands--filter
+.checkbox2:not(checked) + label::before {
+  position: absolute;
+  margin: 7px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat left;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox2:checked + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat right;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox3 {
+  position: absolute;
+  margin: 131px 0 0 -159px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.brands--filter
+.checkbox3  + label {
+  position: absolute;
+  margin: 126px 0 0 -180px;
+  padding: 0 0 0 46px;
+}
+
+.brands--filter
+.checkbox3:not(checked) + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat left;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox3:checked + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat right;
+  width: 11px;
 }
 
 .brands--filter
 .header4 {
   position: absolute;
-  margin: 112px 0 0 11px;
+  margin: 159px 0 0 11px;
   padding: 1px 0 0 30px;
   border: 1px solid #79878d;
   border-radius: 12px;
@@ -1148,6 +1259,7 @@ div {
   width: 21px;
 }
 
+
 .brands--filter
 .header4
 .wheel
@@ -1160,10 +1272,116 @@ div {
   width: 11px;
 }
 
+
+.brands--filter
+.checkbox4 {
+  position: absolute;
+  margin: 196px 0 0 -159px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.brands--filter
+.checkbox4  + label {
+  position: absolute;
+  margin: 192px 0 0 -180px;
+  padding: 0 0 0 46px;
+}
+
+.brands--filter
+.checkbox4:not(checked) + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat left;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox4:checked + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat right;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox5 {
+  position: absolute;
+  margin: 223px 0 0 -159px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.brands--filter
+.checkbox5  + label {
+  position: absolute;
+  margin: 217px 0 0 -180px;
+  padding: 0 0 0 46px;
+}
+
+.brands--filter
+.checkbox5:not(checked) + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat left;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox5:checked + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat right;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox6 {
+  position: absolute;
+  margin: 248px 0 0 -159px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.brands--filter
+.checkbox6  + label {
+  position: absolute;
+  margin: 242px 0 0 -180px;
+  padding: 0 0 0 46px;
+}
+
+.brands--filter
+.checkbox6:not(checked) + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat left;
+  width: 11px;
+}
+
+.brands--filter
+.checkbox6:checked + label::before {
+  position: absolute;
+  margin: 6px 0 0 -24px;
+  height: 11px;
+  content: '';
+  background: url("../img/brands--checkbox.png") no-repeat right;
+  width: 11px;
+}
+
 .brands--filter
 .check--button {
   position: absolute;
-  margin: 233px 0 0 20px;
+  margin: 280px 0 0 20px;
   padding: 7px 0 0 14px;
   border: 1px solid #a7abae;
   border-radius: 12px;

@@ -18,7 +18,7 @@ $(function() {
       }
     );
     $("select").styler();
-    $("input").styler();
+    $(".styled--input").styler();
     $(".check--button").hover(function(){
       $(this).css ("cursor", "pointer");
     });
