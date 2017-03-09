@@ -1416,30 +1416,44 @@ div {
 /* FOOTER */
 
 footer {
-    width: 908px;
-height: 100px;
+  /*position: relative;*/
+  height: 100px;
+  width: 908px;
 }
 
 
-.brands {
-    padding: 42px 116px 0;
-height: 48px;
-text-align: center;
+.jq--backstage {
+  width: 867px;
 }
 
-.brands
+.jq--scene {
+  position: absolute;
+  margin: -48px 0 0 118px;
+  float: left;
+  overflow: hidden;
+  line-height: 27px;
+  width: 667px;
+}
+
+.jq--brand {
+  display: inline-block;
+  margin-right: 12px;
+  float: left;
+}
+
+.jq--brand
 img {
-    display: inline-block;
+  max-width: 97px;
 }
 
-footer
 .links {
-    padding-top: 13px;
-    width: 908px;
-height: 100px;
-    text-align: center;
-    background-color: #213a4d;
-    border: 1px solid #242a3c;
+  margin-top: 91px;
+  padding-top: 13px;
+  background-color: #213a4d;
+  border: 1px solid #242a3c;
+  height: 100px;
+  text-align: center;
+  width: 908px;
 }
 
 footer
