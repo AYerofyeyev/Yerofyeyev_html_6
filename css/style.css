@@ -1422,29 +1422,28 @@ footer {
 }
 
 
-.jq--backstage {
+.jq--truebackstage {
   width: 867px;
 }
 
-.jq--scene {
+.jq--truescene {
   position: absolute;
-  margin: -48px 0 0 118px;
+  margin: -53px 0 0 118px;
   float: left;
   overflow: hidden;
   line-height: 27px;
-  width: 667px;
+  width: 676px;
 }
 
-.jq--brand {
+.jq--truebrand {
   display: inline-block;
   margin-right: 12px;
   float: left;
 }
 
-.jq--brand
-img {
-  max-width: 97px;
-}
+
+
+
 
 .links {
   margin-top: 91px;
@@ -1456,7 +1455,7 @@ img {
   width: 908px;
 }
 
-footer
+.links
 a {
     display: inline-block;
     font-family: Arial;
