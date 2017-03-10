@@ -1495,12 +1495,12 @@ a {
 
 .links
 .copyright {
-  margin: 11px 0 0 -303px;
+  margin: 11px 0 0 -311px;
   color:  #7f4740;
   font-family: Arial;
   font-size: 10px;
   font-weight: 400;
-  letter-spacing: 0.25px;
+  letter-spacing: -0.1px;
   line-height: 18px;
   text-align: center;
 }

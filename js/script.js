@@ -33,61 +33,65 @@ $(function() {
     "imgName": "img/brand--toyo.png",
     "href": "#",
     "imgAlt": "toyo",
-    "imgWidth": "83",
+    "imgWidth": "83px",
     "imgMargin": "5px 0 0 -1px"
     },
     {
     "imgName": "img/brand--bridgestone.png",
     "href": "#",
     "imgAlt": "bridgestone",
-    "imgWidth": "97",
+    "imgWidth": "97px",
     "imgMargin": "0 0 0 0"
     },
     {
     "imgName": "img/brand--continental.png",
     "href": "#",
     "imgAlt": "continental",
-    "imgWidth": "77",
+    "imgWidth": "77px",
     "imgMargin": "5px 0 0 1px"
     },
     {
     "imgName": "img/brand--goofer.png",
     "href": "#",
     "imgAlt": "goofer",
-    "imgWidth": "59",
+    "imgWidth": "59px",
     "imgMargin": "4px 0 0 3px"
   },
   {
     "imgName": "img/brand--avon.png",
     "href": "#",
     "imgAlt": "avon",
-    "imgWidth": "77",
+    "imgWidth": "77px",
     "imgMargin": "0 0 0 0"
   },
   {
     "imgName": "img/brand--factory.png",
     "href": "#",
     "imgAlt": "factory",
-    "imgWidth": "57",
+    "imgWidth": "57px",
     "imgMargin": "1px 0 0 1px"
   },
   {
     "imgName": "img/brand--pirelli.png",
     "href": "#",
     "imgAlt": "pirelli",
-    "imgWidth": "61",
+    "imgWidth": "61px",
     "imgMargin": "1px 0 0 1px"
   },
   {
     "imgName": "img/brand--dunlop.png",
     "href": "#",
     "imgAlt": "dunlop",
-    "imgWidth": "72",
+    "imgWidth": "72px",
     "imgMargin": "0 0 0 3px"
   }
   ];
 
 console.log(options.length + " картинок");
+  var div = $(".jq--truescene");
+  var l = options.length;
+  var a = (l / 2);
+  var arrowWidth = (l / 2 * 109);
   var ul = $(".jq--truebackstage");
 
   for (var i = 0; i < options.length; i++) {
@@ -112,6 +116,47 @@ console.log(options.length + " картинок");
 
     ul.append(listItem[i]);
     listItem[i].append(img[i]);
-    };
-  
+  };
+
+  console.log(arrowWidth);
+  console.log(options[a].href);
+
+  $("<div>")
+    .addClass("jq--trueArrowLeft")
+    .css({
+      position: "absolute",
+      margin: "-52px 0 0 1px",
+      height: "27px",
+      width: (arrowWidth),
+      cursor: "pointer"
+    })
+      // .addListener("click", trueMoveLeft)
+    .insertAfter(div);
+
+  $("<div>")
+    .addClass("jq--trueArrowRight")
+    .css({
+      position: "absolute",
+      margin: "-52px 0 0 0",
+      marginLeft: (arrowWidth),
+      height: "27px",
+      width: (arrowWidth),
+      cursor: "pointer"
+    })
+      // .addListener("click", trueMoveRight)
+    .insertAfter(div);
+
+  $("<a>")
+    .addClass("jq--trueLink")
+    .attr({href: options[a].href})
+    .css({
+      display: "inline-block",
+      position: "absolute",
+      margin: "-52px 0 0 406px",
+      background: "rgba(0,0,0,.2)",
+      height: "27px",
+      width: options[a].imgWidth
+    })
+    .insertAfter(div)
+
 });
