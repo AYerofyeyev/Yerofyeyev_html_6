@@ -87,10 +87,39 @@ $(function() {
   }
   ];
 
+  function trueMoveLeft () {
+    var $elem = $(".jq--truebrand:first");
+    var $clone = $elem.clone();
+    var width = +($elem.css("width").slice(0, -2));
+    var left = +($elem.css("margin-left").slice(0, -2));
+    left -= (width + 12);
+    $clone.appendTo($(".jq--truebackstage"));
+    $elem.animate({marginLeft:  left}, 1000);
+    setTimeout(function () {
+      $elem.remove();
+    }, 1010);
+  };
+
+  function trueMoveRight() {
+    var $clone = $(".jq--truebrand:last").clone();
+    var width = +($(".jq--truebrand:last").css("width").slice(0, -2));
+    var left = +($(".jq--truebrand:last").css("margin-left").slice(0, -2));
+    var cloneLeft = -(width + 12);
+    $clone
+    .css({marginLeft: cloneLeft})
+    .insertBefore($(".jq--truebrand:first"));
+
+    var $elem = $(".jq--truebrand:first");
+    $elem.animate({marginLeft:  left}, 1000);
+    setTimeout(function () {
+      $(".jq--truebrand:last").remove();
+    }, 1010);
+  };
+
 console.log(options.length + " картинок");
   var div = $(".jq--truescene");
   var l = options.length;
-  var a = (l / 2);
+  var a = Math.ceil(l / 2);
   var arrowWidth = (l / 2 * 109);
   var ul = $(".jq--truebackstage");
 
@@ -101,15 +130,16 @@ console.log(options.length + " картинок");
       display: "inline-block",
       margin: options[i].imgMargin,
       marginRight: "12px",
-      float: "left"
+      // float: "left"
     });
 
     img[i] = $("<img>");
     img[i].attr({
       src: options[i].imgName,
       alt: options[i].imgAlt
-    });
-    img[i].css({
+    })
+    .addClass("jq--trueImg")
+    .css({
       width: options[i].imgWidth,
       maxWidth: "97px"
     });
@@ -118,8 +148,18 @@ console.log(options.length + " картинок");
     listItem[i].append(img[i]);
   };
 
-  console.log(arrowWidth);
-  console.log(options[a].href);
+  $("<a>")
+  .addClass("jq--trueLink")
+  .attr({href: options[a].href})
+  .css({
+    display: "inline-block",
+    position: "absolute",
+    margin: "-52px 0 0 406px",
+    border: "1px solid #213a4d",
+    height: "27px",
+    width: options[a].imgWidth
+  })
+  .insertBefore(img[a])
 
   $("<div>")
     .addClass("jq--trueArrowLeft")
@@ -130,7 +170,7 @@ console.log(options.length + " картинок");
       width: (arrowWidth),
       cursor: "pointer"
     })
-      // .addListener("click", trueMoveLeft)
+    .on("click", trueMoveLeft)
     .insertAfter(div);
 
   $("<div>")
@@ -143,20 +183,8 @@ console.log(options.length + " картинок");
       width: (arrowWidth),
       cursor: "pointer"
     })
-      // .addListener("click", trueMoveRight)
+    .on("click", trueMoveRight)
     .insertAfter(div);
 
-  $("<a>")
-    .addClass("jq--trueLink")
-    .attr({href: options[a].href})
-    .css({
-      display: "inline-block",
-      position: "absolute",
-      margin: "-52px 0 0 406px",
-      background: "rgba(0,0,0,.2)",
-      height: "27px",
-      width: options[a].imgWidth
-    })
-    .insertAfter(div)
 
 });
