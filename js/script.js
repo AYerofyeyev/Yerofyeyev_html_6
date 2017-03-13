@@ -25,8 +25,8 @@ $(function() {
 
 //===============================================
 
-  var img = [];
-  var listItem = [];
+  var $img = [];
+  var $listItem = [];
 
   var options = [
     {
@@ -88,16 +88,22 @@ $(function() {
   ];
 
   function trueMoveLeft () {
+    var $img = $(".jq--trueImg");
+    var $listItem = $(".jq--truebrand");
+    console.log($img[a]);
+    $img[a].appendTo($listItem[a]);
+    $a.remove();
     var $elem = $(".jq--truebrand:first");
     var $clone = $elem.clone();
     var width = +($elem.css("width").slice(0, -2));
     var left = +($elem.css("margin-left").slice(0, -2));
     left -= (width + 12);
     $clone.appendTo($(".jq--truebackstage"));
-    $elem.animate({marginLeft:  left}, 1000);
+    $elem.animate({marginLeft:  left}, 500);
     setTimeout(function () {
       $elem.remove();
-    }, 1010);
+    }, 501);
+
   };
 
   function trueMoveRight() {
@@ -110,31 +116,33 @@ $(function() {
     .insertBefore($(".jq--truebrand:first"));
 
     var $elem = $(".jq--truebrand:first");
-    $elem.animate({marginLeft:  left}, 1000);
+    $elem.animate({marginLeft:  left}, 500);
     setTimeout(function () {
       $(".jq--truebrand:last").remove();
-    }, 1010);
+    }, 501);
   };
 
 console.log(options.length + " картинок");
+
   var div = $(".jq--truescene");
   var l = options.length;
-  var a = Math.ceil(l / 2);
-  var arrowWidth = (l / 2 * 109);
+  var a = (Math.ceil(l / 2) - 1);
+  var w = +(options[a].imgWidth.slice(0, -2));
+  var arrowWidth = ((l * 109 - w) / 2);
   var ul = $(".jq--truebackstage");
 
   for (var i = 0; i < options.length; i++) {
-    listItem[i] = $("<li>");
-    listItem[i].addClass("jq--truebrand");
-    listItem[i].css({
+    $listItem[i] = $("<li>")
+    .addClass("jq--truebrand")
+    .css({
       display: "inline-block",
       margin: options[i].imgMargin,
       marginRight: "12px",
       // float: "left"
     });
 
-    img[i] = $("<img>");
-    img[i].attr({
+    $img[i] = $("<img>")
+    .attr({
       src: options[i].imgName,
       alt: options[i].imgAlt
     })
@@ -144,23 +152,22 @@ console.log(options.length + " картинок");
       maxWidth: "97px"
     });
 
-    ul.append(listItem[i]);
-    listItem[i].append(img[i]);
+    ul.append($listItem[i]);
+    $listItem[i].append($img[i]);
   };
 
-  $("<a>")
+  var $img = $(".jq--trueImg");
+  var $a = $("<a>")
   .addClass("jq--trueLink")
   .attr({href: options[a].href})
   .css({
     display: "inline-block",
-    position: "absolute",
-    margin: "-52px 0 0 406px",
     border: "1px solid #213a4d",
-    height: "27px",
-    width: options[a].imgWidth
   })
-  .insertBefore(img[a])
+  .appendTo($listItem[a])
+  .append($img[a]);
 
+  console.log(a);
   $("<div>")
     .addClass("jq--trueArrowLeft")
     .css({
@@ -178,7 +185,7 @@ console.log(options.length + " картинок");
     .css({
       position: "absolute",
       margin: "-52px 0 0 0",
-      marginLeft: (arrowWidth),
+      marginLeft: (arrowWidth + w + 12),
       height: "27px",
       width: (arrowWidth),
       cursor: "pointer"
