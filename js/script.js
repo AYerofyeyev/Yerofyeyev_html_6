@@ -25,9 +25,6 @@ $(function() {
 
 //===============================================
 
-  var $img = [];
-  var $listItem = [];
-
   var options = [
     {
     "imgName": "img/brand--toyo.png",
@@ -87,23 +84,31 @@ $(function() {
   }
   ];
 
+  var $img = [];
+  var $listItem = [];
+  var $div = $(".jq--truescene");
+  var $ul = $(".jq--truebackstage");
+  var l = options.length;
+  var a = (Math.ceil(l / 2) - 1);
+  var w = +(options[a].imgWidth.slice(0, -2));
+  var arrowWidth = 0;
+
   function trueMoveLeft () {
-    var $img = $(".jq--trueImg");
-    var $listItem = $(".jq--truebrand");
-    console.log($img[a]);
-    $img[a].appendTo($listItem[a]);
-    $a.remove();
-    var $elem = $(".jq--truebrand:first");
-    var $clone = $elem.clone();
-    var width = +($elem.css("width").slice(0, -2));
-    var left = +($elem.css("margin-left").slice(0, -2));
+    var $elem = $(".jq--truebrand");
+    var $clone = $elem[0].clone();
+    var width = +($elem[0].css("width").slice(0, -2));
+    var left = +($elem[0].css("margin-left").slice(0, -2));
     left -= (width + 12);
     $clone.appendTo($(".jq--truebackstage"));
-    $elem.animate({marginLeft:  left}, 500);
+    arrowWidthCalc();
+    $elem[0].animate({marginLeft:  left}, 500);
+    $trueLink.animate({
+      width: (+$elem[a].imgWidth.slice(0, -2) + 24),
+      marginLeft: arrowWidth
+    }, 500);
     setTimeout(function () {
       $elem.remove();
     }, 501);
-
   };
 
   function trueMoveRight() {
@@ -122,14 +127,17 @@ $(function() {
     }, 501);
   };
 
-console.log(options.length + " картинок");
+function arrowWidthCalc() {
+  for (var i = 0; i < a; i++) {
+    var w = (+options[i].imgWidth.slice(0, -2) + 12);
+    console.log(w);
+    arrowWidth += w;
+  };
+  return arrowWidth;
+};
 
-  var div = $(".jq--truescene");
-  var l = options.length;
-  var a = (Math.ceil(l / 2) - 1);
-  var w = +(options[a].imgWidth.slice(0, -2));
-  var arrowWidth = ((l * 109 - w) / 2);
-  var ul = $(".jq--truebackstage");
+arrowWidthCalc();
+
 
   for (var i = 0; i < options.length; i++) {
     $listItem[i] = $("<li>")
@@ -152,46 +160,48 @@ console.log(options.length + " картинок");
       maxWidth: "97px"
     });
 
-    ul.append($listItem[i]);
+    $ul.append($listItem[i]);
     $listItem[i].append($img[i]);
   };
 
-  var $img = $(".jq--trueImg");
-  var $a = $("<a>")
+  var $trueLink = $("<a>")
   .addClass("jq--trueLink")
   .attr({href: options[a].href})
   .css({
     display: "inline-block",
+    position: "absolute",
+    marginTop: "-52px",
+    marginLeft: arrowWidth  + 118,
     border: "1px solid #213a4d",
+    height: "27px",
+    width: (+options[a].imgWidth.slice(0, -2) + 12)
   })
-  .appendTo($listItem[a])
-  .append($img[a]);
+  .insertAfter($div);
 
-  console.log(a);
   $("<div>")
     .addClass("jq--trueArrowLeft")
     .css({
       position: "absolute",
-      margin: "-52px 0 0 1px",
+      margin: "-52px 0 0 118px",
       height: "27px",
-      width: (arrowWidth),
+      width: arrowWidth,
       cursor: "pointer"
     })
     .on("click", trueMoveLeft)
-    .insertAfter(div);
+    .insertAfter($div);
 
   $("<div>")
     .addClass("jq--trueArrowRight")
     .css({
       position: "absolute",
       margin: "-52px 0 0 0",
-      marginLeft: (arrowWidth + w + 12),
+      marginLeft: (+$(".jq--truescene").css.width().slice(0, -2) - arrowWidth + 118 + $trueLink.width()),
       height: "27px",
-      width: (arrowWidth),
+      width: (+$(".jq--truescene").css.width().slice(0, -2) - arrowWidth),
       cursor: "pointer"
     })
     .on("click", trueMoveRight)
-    .insertAfter(div);
+    .insertAfter($div);
 
 
 });
