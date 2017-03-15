@@ -53,35 +53,35 @@ $(function() {
     "imgAlt": "goofer",
     "imgWidth": "59px",
     "imgMargin": "4px 0 0 3px"
-  },
-  {
+    },
+    {
     "imgName": "img/brand--avon.png",
     "href": "#",
     "imgAlt": "avon",
     "imgWidth": "77px",
     "imgMargin": "0 0 0 0"
-  },
-  {
+    },
+    {
     "imgName": "img/brand--factory.png",
     "href": "#",
     "imgAlt": "factory",
     "imgWidth": "57px",
     "imgMargin": "1px 0 0 1px"
-  },
-  {
+    },
+    {
     "imgName": "img/brand--pirelli.png",
     "href": "#",
     "imgAlt": "pirelli",
     "imgWidth": "61px",
     "imgMargin": "1px 0 0 1px"
-  },
-  {
+    },
+    {
     "imgName": "img/brand--dunlop.png",
     "href": "#",
     "imgAlt": "dunlop",
     "imgWidth": "72px",
     "imgMargin": "0 0 0 3px"
-  }
+    }
   ];
 
   var $img = [];

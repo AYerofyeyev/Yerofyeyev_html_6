@@ -1,384 +1,379 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>ZAZOR Шины Диски</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link href="css/jquery.formstyler.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-        <script type="text/javascript" src="js/jquery.color.js"></script>
-<script src="js/jquery.formstyler.js"></script>
-        <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <title>ZAZOR Шины Диски</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+    <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="shapka">
-              <div class="handset">
-               <img src="img/handset.png" alt="Call us!">
-              </div>
-              <p class="phoneNumbers">
-                (044)123-45-67 (044)567-89-10
-              </p>
-              <form class="enter">
-                <img src="img/login--icon.png" alt="Вход">
-                <input type="text" name="login" value="" class="login" placeholder="логин">
-                <input type="password" name="password" value="" class="password" placeholder="пароль">
-                <a href="#" class="vhod">вход</a>
-                <a href="#"class="registration">
-                  регистра<span class="text--shift">ц</span>ия
+      <header>
+        <div class="shapka">
+          <div class="handset">
+            <img src="img/handset.png" alt="Call us!">
+          </div>
+          <p class="phoneNumbers">
+            (044)123-45-67 (044)567-89-10
+          </p>
+          <form class="enter">
+            <img src="img/login--icon.png" alt="Вход">
+            <input type="text" name="login" value="" class="login" placeholder="логин">
+            <input type="password" name="password" value="" class="password" placeholder="пароль">
+            <a href="#" class="vhod">вход</a>
+            <a href="#"class="registration">
+              регистра<span class="text--shift">ц</span>ия
+            </a>
+            <a href="#" class="forgot">
+              забыли пароль?
+            </a>
+          </form>
+          <div class="small--pics">
+            <a href="#">
+              <img src="img/home.png" alt="home" class="home">
+            </a>
+            <a href="#">
+              <img src="img/network.png" alt="network" class="network">
+            </a>
+            <a href="#">
+              <img src="img/email.png" alt="email" class="email">
+            </a>
+          </div>
+          </div>
+          <!-- jQuery Caruosel -->
+          <div class="jcarousel">
+            <ul class="jcarousel-list">
+              <li class="jcarousel-item">
+                <a href="#">
+                  <img src="img/banner1.png" alt="zazor.com.ua">
                 </a>
-                <a href="#" class="forgot">
-                  забыли пароль?
+              </li>
+              <li class="jcarousel-item">
+                <a href="https://www.nokiantyres.ua/shyny/lehkovi-avtomobili/zymovi-shyny/" target="_blank">
+                  <img src="img/banner2.png" alt="">
                 </a>
-              </form>
-                <div class="small--pics">
-                  <a href="#">
-                    <img src="img/home.png" alt="home" class="home">
-                  </a>
-                  <a href="#">
-                    <img src="img/network.png" alt="network" class="network">
-                  </a>
-                  <a href="#">
-                    <img src="img/email.png" alt="email" class="email">
-                  </a>
-                </div>
-            </div>
-            <!-- jQuery Caruosel -->
-            <div class="jcarousel">
-              <ul class="jcarousel-list">
-                <li class="jcarousel-item">
-                  <a href="#">
-                    <img src="img/banner1.png" alt="zazor.com.ua">
-                  </a>
-                </li>
-                <li class="jcarousel-item">
-                  <a href="https://www.nokiantyres.ua/shyny/lehkovi-avtomobili/zymovi-shyny/" target="_blank">
-                    <img src="img/banner2.png" alt="">
-                  </a>
-                </li>
-                <li class="jcarousel-item">
-                  <a href="http://www.michelin.ru/RU/ru/tires.html" target="_blank">
-                    <img src="img/banner3.png" alt="">
-                  </a>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li class="jcarousel-item">
+                <a href="http://www.michelin.ru/RU/ru/tires.html" target="_blank">
+                  <img src="img/banner3.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
             <a class="jcarousel-prev" href="#"><</a>
             <a class="jcarousel-next" href="#">></a>
-        </header>
+      </header>
 
-        <nav>
+      <nav>
+        <ul class="menu">
+          <li class="menu--item">
+            <a href="#" class="menu--link link--one">О КОМПА<span class="text--shift">НИ</span></a>
+          </li>
+          <li class="menu--item">
+            <a href="#" class="menu--link link--two">ОПЛАТ<span class="text--shift">А</span></a>
+          </li>
+          <li class="menu--item">
+            <a href="#" class="menu--link link--three">ДОСТАВ<span class="text--shift">КА</span></a>
+          </li>
+          <li class="menu--item dropdown">
+            <a href="#" class="menu--link link--four">СТАТЬ<span class="text--shift">И</span></a>
+            <ul class="submenu">
+              <li>
+                <a href="#" class="menu--link">Подбор дисков</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="menu--link">Подбор шин ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#" class="menu--link">Подбор летних шин</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu--link">Подбор зимних шин</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu--item">
+            <a href="#" class="menu--link link--five">КОНТА<span class="text--shift">КТЫ</span></a>
+          </li>
+        </ul>
+        <div class="basket">
+          <a href="#">
+            <img src="img/basket.png" alt="basket">
+          </a>
+          <p class="goods">товаров:<span class="menu--text">0</span></p>
+          <p class="summ"><span class="text--shift">н</span>а сум<span class="text--shift">му</span><span class="text--shift">:</span><span class="menu--text menu--digits">0,00</span> <span class="menu--text menu--currancy">грн.</span></p>
+        </div>
+      </nav>
 
-          <ul class="menu">
-            <li class="menu--item">
-              <a href="#" class="menu--link link--one">О КОМПА<span class="text--shift">НИ</span></a>
-            </li>
-            <li class="menu--item">
-              <a href="#" class="menu--link link--two">ОПЛАТ<span class="text--shift">А</span></a>
-            </li>
-            <li class="menu--item">
-              <a href="#" class="menu--link link--three">ДОСТАВ<span class="text--shift">КА</span></a>
-            </li>
-            <li class="menu--item dropdown">
-              <a href="#" class="menu--link link--four">СТАТЬ<span class="text--shift">И</span></a>
-              <ul class="submenu">
-                <li>
-                  <a href="#" class="menu--link">Подбор дисков</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="menu--link">Подбор шин ></a>
-                  <ul class="submenu">
-                    <li>
-                      <a href="#" class="menu--link">Подбор летних шин</a>
-                    </li>
-                    <li>
-                      <a href="#" class="menu--link">Подбор зимних шин</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu--item">
-              <a href="#" class="menu--link link--five">КОНТА<span class="text--shift">КТЫ</span></a>
-            </li>
-          </ul>
-          <div class="basket">
-            <a href="#">
-              <img src="img/basket.png" alt="basket">
-            </a>
-            <p class="goods">товаров:<span class="menu--text">0</span></p>
-            <p class="summ"><span class="text--shift">н</span>а сум<span class="text--shift">му</span><span class="text--shift">:</span><span class="menu--text menu--digits">0,00</span> <span class="menu--text menu--currancy">грн.</span></p>
-          </div>
+      <main>
 
-        </nav>
+        <article class="filter">
 
-        <main>
-
-            <article class="filter">
-
-                <form class="search--car" action="index.html" method="post">
-                    <p class="name">Поиск <span>по авт<span>омобил<span>ю</span></span></span></p>
-                    <p class="form--header header2">Д<span>иски:</span></p>
-                    <p class="form--header header3">Шины:</p>
-                    <div class="text--box1">
-                      <p class="text--bold">Марка</p>
-                      <p class="text--thin line1">авто:</p>
-                      <p class="text--bold line2">Модель</p>
-                      <p class="text--thin line3">автомо<span>биля:</span></p>
-                      <p class="text--bold line4">Год выпуска</p>
-                      <p class="text--thin line5">автомобиля:</p>
-                      <p class="text--bold line6">Компле<span>ктация:</span></p>
-                    </div>
-
-                    <div class="input--box1">
-                      <select class="select1"></select>
-                      <select class="select2"></select>
-                      <select class="select3" name=""></select>
-                      <select class="select4" name=""></select>
-                    </div>
-
-                    <div class="text--box2">
-                      <p class="text--bold">Марка</p>
-                      <p class="text--thin line1">авто:</p>
-                      <p class="text--bold line2">Модель</p>
-                      <p class="text--thin line3">автомо<span>биля:</span></p>
-                      <p class="text--bold line4">Год <span>вы<span >пуск</span><span>а</span></span></p>
-                      <p class="text--thin line5">автомобиля:</p>
-                      <p class="text--bold line6">Компле<span>ктация:</span></p>
-                    </div>
-
-                    <div class="input--box2">
-                      <select class="select1"></select>
-                      <select class="select2"></select>
-                      <select class="select3" name=""></select>
-                      <select class="select4" name=""></select>
-                    </div>
-                    <a href="#" class="search">поиск...</a>
-
-                </form>
-
-                <form class="search--tires" action="index.html" method="post">
-                    <p class="name">поиск шин</p>
-                    <p class="header1">Размер</p>
-                    <p class="header2">R</p>
-                    <p class="header3">Сезон:</p>
-                    <p class="header4">/</p>
-                    <select class="select1">
-                      <option value="145">145</option>
-                      <option value="150">150</option>
-                      <option value="155">155</option>
-                      <option value="160">160</option>
-                      <option value="165">165</option>
-                      <option value="170">170</option>
-                      <option value="175">175</option>
-                      <option value="180">180</option>
-                      <option value="185">185</option>
-                      <option value="190">190</option>
-                      <option value="195">195</option>
-                    </select>
-                    <select class="select2"></select>
-                    <select class="select3">
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                    </select>
-                    <div class="seasons">
-                      <label for="" class="summer">
-                        <div class="jq-checkbox">
-                          <input type="checkbox" name="season" value="on" class="styled--input">
-                          <div class="jq-checkbox__div"></div>
-                        </div>
-                        <span class="summer--text">лето</span>
-                      </label>
-                      <label for="" class="winter">
-                        <div class="jq-checkbox">
-                          <input type="checkbox" name="season" value="on" class="styled--input">
-                          <div class="jq-checkbox__div"></div>
-                        </div>
-                        <span>зима</span>
-                      </label>
-                      <label for="" class="allseas">
-                        <div class="jq-checkbox">
-                          <input type="checkbox" name="season" value="on" class="styled--input">
-                          <div class="jq-checkbox__div"></div>
-                        </div>
-                        <span>всесез</span>
-                      </label>
-                    </div>
-
-                    <a href="#" class="search">поиск...</a>
-                </form>
-
-                <form class="search--wheels" action="index.html" method="post">
-                    <p class="name">поиск дисков</p>
-                    <div class="text--box1">
-                      <p class="text--bold line1">Диаметр</p>
-                      <p class="text--thin line2">диска:</p>
-                      <p class="text--bold line3">Количество</p>
-                      <p class="text--thin line4">
-крепёжных
-<span>отверстий:</span></p>
-                      <p class="text--bold line5">Диаметр</p>
-                      <p class="text--thin line6">расположения
-<span>крепёжных</span>
-<span>отверстий:</span></p>
-                    </div>
-                    <div class="input--box1">
-                      <select class="select1">
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14" selected>14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                      </select>
-
-                      <select class="select2">
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-
-                      <select class="select3">
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                      </select>
-                    </div>
-                    <div class="input--box2">
-                    <p class="text--bold line7">ДЦО</p>
-                    <p class="text--thin line8">(диаметр
-центрального
-отверстия):</p>
-                    <select class="select4">
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                    </select>
-                    <p class="text--bold line9">ET</p>
-                    <p class="text--thin line10">
-(вылет <span>диска):</span></p>
-                    <select class="select5">
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                    </select>
-                  </div>
-
-
-                    <a href="#" class="search">поиск...</a>
-                </form>
-
-            </article>
-
-            <aside class="catalog">
-                <p><img src="" alt=""><h2>каталог продукции</h2></p>
-                <p><span></span><h3>шины</h3></p>
-
-            </aside>
-
-            <aside class="brands--filter">
-              <div class="header2">
-                <h2>бренды:</h2>
-              </div>
-              <div class="header3">
-                <h3>шины</h3>
-                <div class="wheel">
-                  <div class=""></div>
-                </div>
-              </div>
-
-                <input type="checkbox" name="brand--tires" value="" class="checkbox1">
-                <label for="checkbox1" >Бренд 1</label>
-
-                <input type="checkbox" name="brand--tires" value="" class="checkbox2">
-              <label for="checkbox2" >Бренд 2</label>
-
-              <input type="checkbox" name="brand--tires" value="" class="checkbox3">
-              <label for="checkbox3">Бренд 3</label>
-
-              <div class="header4">
-                <h2>диски</h3>
-                  <div class="wheel">
-                    <div class=""></div>
-                  </div>
-                </div>
-
-                <input type="checkbox" name="brand--tires" value="" class="checkbox4">
-                <label for="checkbox4">Бренд 1</label>
-
-                <input type="checkbox" name="brand--tires" value="" class="checkbox5">
-                <label for="checkbox5">Бренд 2</label>
-
-                <input type="checkbox" name="brand--tires" value="" class="checkbox6">
-                <label for="checkbox6">Бренд 3</label>
-
-              <div class="check--button">
-                выбрать
-              </div>
-            </aside>
-
-            <article class="content">
-
-            </article>
-
-        </main>
-
-        <footer>
-
-            <div class="jq--truescene">
-              <ul class="jq--truebackstage"></ul>
+          <form class="search--car" action="index.html" method="post">
+            <p class="name">Поиск <span>по авт<span>омобил<span>ю</span></span></span></p>
+            <p class="form--header header2">Д<span>иски:</span></p>
+            <p class="form--header header3">Шины:</p>
+            <div class="text--box1">
+              <p class="text--bold">Марка</p>
+              <p class="text--thin line1">авто:</p>
+              <p class="text--bold line2">Модель</p>
+              <p class="text--thin line3">автомо<span>биля:</span></p>
+              <p class="text--bold line4">Год выпуска</p>
+              <p class="text--thin line5">автомобиля:</p>
+              <p class="text--bold line6">Компле<span>ктация:</span></p>
             </div>
 
-            <article class="links">
-                <a href="#" class="about--us">О компании</a>
-                <a href="#" class="delivery">Доставка</a>
-                <a href="#" class="articles">Статьи</a>
-                <a href="#" class="contacts">Контакты</a>
-                <p class="copyright">Создание сайта © Global Vision</p>
-            </article>
-        </footer>
+            <div class="input--box1">
+              <select class="select1"></select>
+              <select class="select2"></select>
+              <select class="select3" name=""></select>
+              <select class="select4" name=""></select>
+            </div>
+
+            <div class="text--box2">
+              <p class="text--bold">Марка</p>
+              <p class="text--thin line1">авто:</p>
+              <p class="text--bold line2">Модель</p>
+              <p class="text--thin line3">автомо<span>биля:</span></p>
+              <p class="text--bold line4">Год <span>вы<span >пуск</span><span>а</span></span></p>
+              <p class="text--thin line5">автомобиля:</p>
+              <p class="text--bold line6">Компле<span>ктация:</span></p>
+            </div>
+
+            <div class="input--box2">
+              <select class="select1"></select>
+              <select class="select2"></select>
+              <select class="select3" name=""></select>
+              <select class="select4" name=""></select>
+            </div>
+            <a href="#" class="search">поиск...</a>
+
+          </form>
+
+          <form class="search--tires" action="index.html" method="post">
+            <p class="name">поиск шин</p>
+            <p class="header1">Размер</p>
+            <p class="header2">R</p>
+            <p class="header3">Сезон:</p>
+            <p class="header4">/</p>
+            <select class="select1">
+              <option value="145">145</option>
+              <option value="150">150</option>
+              <option value="155">155</option>
+              <option value="160">160</option>
+              <option value="165">165</option>
+              <option value="170">170</option>
+              <option value="175">175</option>
+              <option value="180">180</option>
+              <option value="185">185</option>
+              <option value="190">190</option>
+              <option value="195">195</option>
+            </select>
+            <select class="select2"></select>
+            <select class="select3">
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+            </select>
+            <div class="seasons">
+              <label for="" class="summer">
+                <div class="jq-checkbox">
+                  <input type="checkbox" name="season" value="on" class="styled--input">
+                  <div class="jq-checkbox__div"></div>
+                </div>
+                <span class="summer--text">лето</span>
+              </label>
+              <label for="" class="winter">
+                <div class="jq-checkbox">
+                  <input type="checkbox" name="season" value="on" class="styled--input">
+                  <div class="jq-checkbox__div"></div>
+                </div>
+                <span>зима</span>
+              </label>
+              <label for="" class="allseas">
+                <div class="jq-checkbox">
+                  <input type="checkbox" name="season" value="on" class="styled--input">
+                  <div class="jq-checkbox__div"></div>
+                </div>
+                <span>всесез</span>
+              </label>
+            </div>
+
+            <a href="#" class="search">поиск...</a>
+          </form>
+
+          <form class="search--wheels" action="index.html" method="post">
+            <p class="name">поиск дисков</p>
+            <div class="text--box1">
+              <p class="text--bold line1">Диаметр</p>
+              <p class="text--thin line2">диска:</p>
+              <p class="text--bold line3">Количество</p>
+              <p class="text--thin line4">крепёжных<span>отверстий:</span></p>
+              <p class="text--bold line5">Диаметр</p>
+              <p class="text--thin line6">расположения
+                <span>крепёжных</span>
+                <span>отверстий:</span>
+              </p>
+            </div>
+            <div class="input--box1">
+              <select class="select1">
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14" selected>14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+              </select>
+
+              <select class="select2">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+
+              <select class="select3">
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+              </select>
+            </div>
+            <div class="input--box2">
+              <p class="text--bold line7">ДЦО</p>
+              <p class="text--thin line8">(диаметр центрального отверстия):</p>
+              <select class="select4">
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+              </select>
+              <p class="text--bold line9">ET</p>
+              <p class="text--thin line10">
+                (вылет <span>диска):</span>
+              </p>
+              <select class="select5">
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+              </select>
+            </div>
+
+            <a href="#" class="search">поиск...</a>
+          </form>
+
+        </article>
+
+        <aside class="catalog">
+          <p><img src="" alt=""><h2>каталог продукции</h2></p>
+          <p><span></span><h3>шины</h3></p>
+
+        </aside>
+
+        <aside class="brands--filter">
+          <div class="header2">
+            <h2>бренды:</h2>
+          </div>
+          <div class="header3">
+            <h3>шины</h3>
+            <div class="wheel">
+              <div class=""></div>
+            </div>
+          </div>
+
+          <input type="checkbox" name="brand--tires" value="" class="checkbox1">
+          <label for="checkbox1" >Бренд 1</label>
+
+          <input type="checkbox" name="brand--tires" value="" class="checkbox2">
+          <label for="checkbox2" >Бренд 2</label>
+
+          <input type="checkbox" name="brand--tires" value="" class="checkbox3">
+          <label for="checkbox3">Бренд 3</label>
+
+          <div class="header4">
+            <h2>диски</h3>
+            <div class="wheel">
+              <div class=""></div>
+            </div>
+          </div>
+
+          <input type="checkbox" name="brand--tires" value="" class="checkbox4">
+          <label for="checkbox4">Бренд 1</label>
+
+          <input type="checkbox" name="brand--tires" value="" class="checkbox5">
+          <label for="checkbox5">Бренд 2</label>
+
+          <input type="checkbox" name="brand--tires" value="" class="checkbox6">
+          <label for="checkbox6">Бренд 3</label>
+
+          <div class="check--button">
+            выбрать
+          </div>
+        </aside>
+
+        <article class="content">
+
+        </article>
+
+      </main>
+
+      <footer>
+
+        <div class="jq--truescene">
+          <ul class="jq--truebackstage"></ul>
+        </div>
+
+        <article class="links">
+          <a href="#" class="about--us">О компании</a>
+          <a href="#" class="delivery">Доставка</a>
+          <a href="#" class="articles">Статьи</a>
+          <a href="#" class="contacts">Контакты</a>
+          <p class="copyright">Создание сайта © Global Vision</p>
+        </article>
+      </footer>
 
     </div>
-    </body>
+  </body>
 </html>
