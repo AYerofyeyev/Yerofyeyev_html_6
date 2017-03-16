@@ -127,27 +127,26 @@ $(function() {
     }, 501);
   };
 
-function arrowWidthCalc() {
+  (function arrowWidthCalc() {
   for (var i = 0; i < a; i++) {
     var w = (+options[i].imgWidth.slice(0, -2) + 12);
     console.log(w);
     arrowWidth += w;
   };
   return arrowWidth;
-};
+});
 
-arrowWidthCalc();
-
+// arrowWidthCalc();
 
   for (var i = 0; i < options.length; i++) {
     $listItem[i] = $("<li>")
-    .addClass("jq--truebrand")
-    .css({
-      display: "inline-block",
-      margin: options[i].imgMargin,
-      marginRight: "12px",
-      // float: "left"
-    });
+      .addClass("jq--truebrand")
+      .css({
+        display: "inline-block",
+        margin: options[i].imgMargin,
+        marginRight: "12px",
+        // float: "left"
+      });
 
     $img[i] = $("<img>")
     .attr({
