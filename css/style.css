@@ -1032,6 +1032,156 @@ span {
   width: 181px;
 }
 
+.catalog
+.header2 {
+  margin: 4px 0 0 -3px;
+  padding-left: 30px;
+  border: 1px solid #79878d;
+  border-radius: 40px;
+  box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);
+  height: 25px;
+  width: 151px;
+}
+
+.catalog
+h2 {
+  color: #0c3256;
+  line-height: 25px;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.catalog
+.header2::before {
+  position: absolute;
+  margin: 1px 0 0 -27px;
+  background: url('../img/sheet.png') no-repeat center ,  linear-gradient(180deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+  border-radius: 50%;
+  content: '';
+  height: 22px;
+  width: 22px;
+}
+
+.catalog
+.header3 {
+  position: absolute;
+  margin: 45px 0 0 12px;
+  padding-left: 30px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  /*box-shadow: 1px 3px 3px 0px rgba(150, 150, 150, 0.75);*/
+  height: 26px;
+  width: 104px;
+}
+
+.catalog
+h3 {
+  color: #0c3256;
+  line-height: 26px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.catalog
+.header3
+.wheel {
+  position: absolute;
+  margin: -24px 0 0 -26px;
+  background: #114165;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+}
+
+.catalog
+.header3
+.wheel
+div {
+  position: absolute;
+  margin: 5px 0 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.catalog
+.header4 {
+  position: absolute;
+  margin: 159px 0 0 11px;
+  padding: 1px 0 0 30px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  height: 25px;
+  width: 105px;
+}
+
+.catalog
+.header4
+.wheel {
+  position: absolute;
+  margin: -24px 0 0 -27px;
+  background: #114165;
+  border-radius: 50%;
+  height: 22px;
+  width: 21px;
+}
+
+
+.catalog
+.header4
+.wheel
+div {
+  position: absolute;
+  margin: 5px 0 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 11px;
+}
+
+.catalog
+.header5 {
+  position: absolute;
+  margin: 259px 0 0 11px;
+  padding: 1px 0 0 30px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  height: 25px;
+  width: 105px;
+}
+
+.catalog
+.header5
+.wheel {
+  position: absolute;
+  margin: -24px 0 0 -27px;
+  background: #114165;
+  border-radius: 50%;
+  height: 22px;
+  width: 21px;
+}
+
+
+.catalog
+.header5
+.wheel
+div {
+  position: absolute;
+  margin: 5px 0 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 11px;
+}
+
+
 /* RIGHT ASIDE */
 
 .brands--filter {
