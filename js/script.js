@@ -24,7 +24,24 @@ $(function() {
     });
 
 //===============================================
+// Шаблон
+var content = document.getElementsByClassName("content");
+var goods =  {
+    brandname: "Goodyear",
+    model: "Ultra Grip Extreme",
+    imagename: "img/11.png",
+    price: "90,00 грн."
+  };
 
+
+var tmpl = _.template(document.getElementById("content--template").innerHTML);
+
+console.log(tmpl);
+
+content.append(tmpl);
+
+
+// Переменная для модуля
   var options = [
     {
     "imgName": "img/brand--toyo.png",
