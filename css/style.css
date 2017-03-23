@@ -1033,6 +1033,11 @@ span {
 }
 
 .catalog
+label {
+  letter-spacing: -.2px;
+}
+
+.catalog
 .header2 {
   margin: 4px 0 0 -3px;
   padding-left: 28px;
@@ -1056,7 +1061,7 @@ h2 {
 }
 
 .catalog
-span {
+.shift {
   margin-left: -1px;
 }
 
@@ -1135,6 +1140,8 @@ div {
 .radio1 {
   position: absolute;
   margin: 7px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
 }
 
 .catalog
@@ -1144,9 +1151,69 @@ div {
 }
 
 .catalog
+.radio1:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio1:checked + label::before {
+  position: absolute;
+  margin: 2px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio1:checked + label {
+  color:  #0c3256;
+  line-height: 28px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.catalog
+.radio1:checked + label {
+  color:  #0c3256;
+  padding-top: 7px;
+  line-height: 14px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: -.2px;
+  border-bottom: 2px solid #0c3256;
+}
+
+.catalog
+.radio1:checked + label
+span {
+  margin-left: 1px;
+}
+
+.catalog
+.radio1:checked + label
+.label--shift {
+  margin-left: -1px;
+}
+
+
+.catalog
 .radio2 {
   position: absolute;
   margin: 33px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
 }
 
 .catalog
@@ -1156,9 +1223,57 @@ div {
 }
 
 .catalog
+.radio2:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio2:checked + label::before {
+  position: absolute;
+  margin: 2px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio2:checked + label {
+  color:  #0c3256;
+  padding-top: 7px;
+  line-height: 14px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: -.2px;
+  border-bottom: 2px solid #0c3256;
+}
+
+.catalog
+.radio2:checked + label
+span {
+  margin-left: 1px;
+}
+
+.catalog
+.radio2:checked + label
+.label--shift {
+  margin-left: -1px;
+}
+
+.catalog
 .radio3 {
   position: absolute;
   margin: 58px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
 }
 
 .catalog
@@ -1168,9 +1283,31 @@ div {
 }
 
 .catalog
+.radio3:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio3:checked + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
 .radio4 {
   position: absolute;
   margin: 84px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
 }
 
 .catalog
@@ -1179,18 +1316,25 @@ div {
   margin: 77px 0 0 21px;
 }
 
-/*.catalog
-label
-input:active  {
-  color:  #0c3256;
-  line-height: 28px;
-  font-family: Arial;
-  font-size: 14px;
-  font-weight: 700;
-  font-style: italic;
-  text-decoration: underline;
-  text-align: left;
-}*/
+.catalog
+.radio4:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio4:checked + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
 
 .catalog
 .header4 {
@@ -1229,6 +1373,7 @@ div {
 
 .catalog
 .input--box2 {
+  position: relative;
   margin: 198px 0 0 24px;
   color:  #465961;
   font-family: 'Lucida Sans Unicode';
@@ -1239,9 +1384,145 @@ div {
 }
 
 .catalog
+.radio5 {
+  position: absolute;
+  margin: 8px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio5 + label {
+  position: absolute;
+  margin: 0 0 0 21px;
+}
+
+.catalog
+.radio5:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio5:checked + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio6 {
+  position: absolute;
+  margin: 32px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio6 + label {
+  position: absolute;
+  margin: 25px 0 0 21px;
+}
+
+.catalog
+.radio6:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio6:checked + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio7 {
+  position: absolute;
+  margin: 58px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio7 + label {
+  position: absolute;
+  margin: 51px 0 0 21px;
+}
+
+.catalog
+.radio7:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio7:checked + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio8 {
+  position: absolute;
+  margin: 84px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio8 + label {
+  position: absolute;
+  margin: 77px 0 0 21px;
+}
+
+.catalog
+.radio8:not(checked) + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio8:checked + label::before {
+  position: absolute;
+  margin: 9px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
 .header5 {
   position: absolute;
-  margin: 259px 0 0 11px;
+  margin: 101px 0 0 -1px;
   padding: 1px 0 0 30px;
   border: 1px solid #79878d;
   border-radius: 12px;
@@ -1284,6 +1565,141 @@ div {
   text-align: left;
 }
 
+.catalog
+.radio9 {
+  position: absolute;
+  margin: 8px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio9 + label {
+  position: absolute;
+  margin: 0 0 0 21px;
+}
+
+.catalog
+.radio9:not(checked) + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio9:checked + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio10 {
+  position: absolute;
+  margin: 33px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio10 + label {
+  position: absolute;
+  margin: 25px 0 0 21px;
+}
+
+.catalog
+.radio10:not(checked) + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio10:checked + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio11 {
+  position: absolute;
+  margin: 58px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio11 + label {
+  position: absolute;
+  margin: 51px 0 0 21px;
+}
+
+.catalog
+.radio11:not(checked) + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio11:checked + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
+
+.catalog
+.radio12 {
+  position: absolute;
+  margin: 85px 0 0 8px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.catalog
+.radio12 + label {
+  position: absolute;
+  margin: 76px 0 0 21px;
+}
+
+.catalog
+.radio12:not(checked) + label::before {
+  position: absolute;
+  margin: 11px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat left;
+  width: 8px;
+}
+
+.catalog
+.radio12:checked + label::before {
+  position: absolute;
+  margin: 10px 0 0 -11px;
+  height: 8px;
+  content: '';
+  background: url("../img/radio.png") no-repeat right;
+  width: 8px;
+}
 
 /* RIGHT ASIDE */
 
