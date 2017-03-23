@@ -412,15 +412,13 @@
         </aside>
 
         <article class="content">
-          <script type="text/template" id="content--template">
-            <% goods.forEach (function() { %>
-              <figure>
-                <a href="#" class="brandname"><%-brandname%></a>
-                <!-- <a href="#" class="model"><%-model%></a>
-                <img src=<%-imagename% class="image"> alt=<%-altname%>>
-                <figcaption class="price"><%-price%></figcaption> -->
-              </figure>
-            <% }); %>
+          <script type="text/template" class="content--template">
+            <figure>
+              <a href="#" class="brandname"><%-brandname%></a>
+              <a href="#" class="model"><%-model%></a>
+              <a href="#" class="image"><img src=<%-imagename%> alt=<%-model%>></a>
+              <figcapture><%-price%></figcapture>
+            </figure>
           </script>
 
         </article>
