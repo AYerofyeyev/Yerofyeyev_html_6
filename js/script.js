@@ -25,24 +25,70 @@ $(function() {
 
 //===============================================
 // Шаблон
-var goods =
+var goods = [
   {
     brandname: "Goodyear",
     model: "Ultra Grip Extreme",
     imagename: "img/11.png",
     price: "90,00 грн."
+  },
+  {
+    brandname: "Nokian",
+    model: "Hakkapeliitta R",
+    imagename: "img/12.png",
+    price: "115,00 грн."
+  },
+  {
+    brandname: "Hankook",
+    model: "K 708 155/65 R14",
+    imagename: "img/13.png",
+    price: "393,00 грн."
+  },
+  {
+    brandname: "Goodyear",
+    model: "Ultra Grip Extreme",
+    imagename: "img/11.png",
+    price: "90,00 грн."
+  },
+  {
+    brandname: "Nokian",
+    model: "Hakkapeliitta R",
+    imagename: "img/12.png",
+    price: "115,00 грн."
+  },
+  {
+    brandname: "Hankook",
+    model: "K 708 155/65 R14",
+    imagename: "img/13.png",
+    price: "393,00 грн."
+  },
+  {
+    brandname: "Goodyear",
+    model: "Ultra Grip Extreme",
+    imagename: "img/11.png",
+    price: "90,00 грн."
+  },
+  {
+    brandname: "Nokian",
+    model: "Hakkapeliitta R",
+    imagename: "img/12.png",
+    price: "115,00 грн."
+  },
+  {
+    brandname: "Hankook",
+    model: "K 708 155/65 R14",
+    imagename: "img/13.png",
+    price: "393,00 грн."
   }
-;
+];
 
-var article = $(".content--template").html();
-
-var tmpl = _.template(article);
-
-var $content = tmpl(goods);
-
-console.log(tmpl);
-
+_.forEach(goods, (item) => {
+var html = $(".content--template").html();
+var tmpl = _.template(html);
+var $content = tmpl(item);
 $(".content").append($content);
+});
+
 
 
 // Переменная для модуля
