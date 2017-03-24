@@ -2338,11 +2338,84 @@ div {
 
 .content {
   margin: 153px 194px 0;
+  padding: 13px 0 0 19px;
   background: linear-gradient(to top, #93a7b0, #e5e7e8);
   box-shadow: 0px -1px 1px 1px #e5e7e8, 0px 1px 1px 1px #93a7b0;
-  height: 624px;
-  /* width: 527px; */
+  height: 610px;
 }
+
+.content
+figure {
+  margin-right: 25px;
+  display: inline-block;
+  height: 177px;
+  width: 138px;
+}
+
+.content
+figure
+a {
+  text-decoration: none;
+}
+
+.content
+.brandname {
+  display: block;
+  color:  #206988;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.content
+.model {
+  display: block;
+  color:  #1f2528;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.content
+.image {
+  display: inline-block;
+  border: 1px solid #a4aeb1;
+  border-radius: 7px;
+  background-color:  #fff;
+  text-align: center;
+  height: 127px;
+  width: 138px;
+}
+
+.content
+img {
+  display: inline-block;
+}
+
+.content
+figcapture {
+  display: block;
+  color:  #114165;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.content
+span {
+  margin-left: 1px;
+  color:  #114165;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
 
 
 /* FOOTER */

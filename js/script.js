@@ -30,55 +30,55 @@ var goods = [
     brandname: "Goodyear",
     model: "Ultra Grip Extreme",
     imagename: "img/11.png",
-    price: "90,00 грн."
+    price: "90,00"
   },
   {
     brandname: "Nokian",
     model: "Hakkapeliitta R",
     imagename: "img/12.png",
-    price: "115,00 грн."
+    price: "115,00"
   },
   {
     brandname: "Hankook",
     model: "K 708 155/65 R14",
     imagename: "img/13.png",
-    price: "393,00 грн."
+    price: "393,00"
   },
   {
     brandname: "Goodyear",
     model: "Ultra Grip Extreme",
     imagename: "img/11.png",
-    price: "90,00 грн."
+    price: "90,00"
   },
   {
     brandname: "Nokian",
     model: "Hakkapeliitta R",
     imagename: "img/12.png",
-    price: "115,00 грн."
+    price: "115,00"
   },
   {
     brandname: "Hankook",
     model: "K 708 155/65 R14",
     imagename: "img/13.png",
-    price: "393,00 грн."
+    price: "393,00"
   },
   {
     brandname: "Goodyear",
     model: "Ultra Grip Extreme",
     imagename: "img/11.png",
-    price: "90,00 грн."
+    price: "90,00"
   },
   {
     brandname: "Nokian",
     model: "Hakkapeliitta R",
     imagename: "img/12.png",
-    price: "115,00 грн."
+    price: "115,00"
   },
   {
     brandname: "Hankook",
     model: "K 708 155/65 R14",
     imagename: "img/13.png",
-    price: "393,00 грн."
+    price: "393,00"
   }
 ];
 
