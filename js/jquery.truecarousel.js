@@ -70,6 +70,39 @@ console.log($arrowWidth);
     var a = (Math.ceil($options.length / 2) - 1);
 console.log(a);
 
+  function trueMoveLeft () {
+    var $elem = $(".jq--truebrand:first");
+    var $clone = $(".jq--truebrand:first").clone();
+    var $width = +($elem.css("width").slice(0, -2));
+    var $left = +($elem.css("margin-left").slice(0, -2));
+    $left -= ($width + 12);
+
+    $clone.appendTo($ul);
+    $elem.animate({marginLeft:  $left}, 500);
+    setTimeout(function () {
+      $elem.remove();
+    }, 501);
+  };
+
+  function trueMoveRight() {
+    var $clone = $(".jq--truebrand:last").clone();
+    var $width = +($(".jq--truebrand:last").css("width").slice(0, -2));
+    var $left = +($(".jq--truebrand:last").css("margin-left").slice(0, -2));
+    var $cloneLeft = -($width + 12);
+
+    $clone
+    .css({marginLeft: $cloneLeft})
+    .insertBefore($(".jq--truebrand:first"));
+
+    var $elem = $(".jq--truebrand:first");
+    $elem.animate({marginLeft:  $left}, 500);
+    setTimeout(function () {
+      $(".jq--truebrand:last").remove();
+    }, 501);
+  };
+
+
+
     for (var i = 0; i < $options.length; i++) {
       $listItem[i] = $("<li>")
         .addClass("jq--truebrand")
@@ -118,7 +151,7 @@ console.log(a);
       width: $arrowWidth,
       cursor: "pointer"
     })
-    //     .on("click", trueMoveRight)
+    .on("click", trueMoveRight)
     .insertAfter(this);
 
     $("<div>")
@@ -130,7 +163,7 @@ console.log(a);
         width: $arrowWidth,
         cursor: "pointer"
       })
-      // .on("click", trueMoveLeft)
+      .on("click", trueMoveLeft)
       .insertAfter(this);
 
 
