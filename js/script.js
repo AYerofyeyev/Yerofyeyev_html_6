@@ -91,68 +91,69 @@ $(".content").append($content);
 
 
 
-// Переменная для модуля
-//   var options = [
-//     {
-//     "imgName": "img/brand--toyo.png",
-//     "href": "#",
-//     "imgAlt": "toyo",
-//     "imgWidth": "83px",
-//     "imgMargin": "5px 0 0 -1px"
-//     },
-//     {
-//     "imgName": "img/brand--bridgestone.png",
-//     "href": "#",
-//     "imgAlt": "bridgestone",
-//     "imgWidth": "97px",
-//     "imgMargin": "0 0 0 0"
-//     },
-//     {
-//     "imgName": "img/brand--continental.png",
-//     "href": "#",
-//     "imgAlt": "continental",
-//     "imgWidth": "77px",
-//     "imgMargin": "5px 0 0 1px"
-//     },
-//     {
-//     "imgName": "img/brand--goofer.png",
-//     "href": "#",
-//     "imgAlt": "goofer",
-//     "imgWidth": "59px",
-//     "imgMargin": "4px 0 0 3px"
-//     },
-//     {
-//     "imgName": "img/brand--avon.png",
-//     "href": "#",
-//     "imgAlt": "avon",
-//     "imgWidth": "77px",
-//     "imgMargin": "0 0 0 0"
-//     },
-//     {
-//     "imgName": "img/brand--factory.png",
-//     "href": "#",
-//     "imgAlt": "factory",
-//     "imgWidth": "57px",
-//     "imgMargin": "1px 0 0 1px"
-//     },
-//     {
-//     "imgName": "img/brand--pirelli.png",
-//     "href": "#",
-//     "imgAlt": "pirelli",
-//     "imgWidth": "61px",
-//     "imgMargin": "1px 0 0 1px"
-//     },
-//     {
-//     "imgName": "img/brand--dunlop.png",
-//     "href": "#",
-//     "imgAlt": "dunlop",
-//     "imgWidth": "72px",
-//     "imgMargin": "0 0 0 3px"
-//     }
-//   ];
-//
-//   var $img = [];
-//   var $listItem = [];
+//  Переменная для модуля
+  var $options = [
+    {
+    "imgName": "img/brand--toyo.png",
+    "href": "#",
+    "imgAlt": "toyo",
+    "imgWidth": "83px",
+    "imgMargin": "5px 0 0 -1px"
+    },
+    {
+    "imgName": "img/brand--bridgestone.png",
+    "href": "#",
+    "imgAlt": "bridgestone",
+    "imgWidth": "97px",
+    "imgMargin": "0 0 0 0"
+    },
+    {
+    "imgName": "img/brand--continental.png",
+    "href": "#",
+    "imgAlt": "continental",
+    "imgWidth": "77px",
+    "imgMargin": "5px 0 0 1px"
+    },
+    {
+    "imgName": "img/brand--goofer.png",
+    "href": "#",
+    "imgAlt": "goofer",
+    "imgWidth": "59px",
+    "imgMargin": "4px 0 0 3px"
+    },
+    {
+    "imgName": "img/brand--avon.png",
+    "href": "#",
+    "imgAlt": "avon",
+    "imgWidth": "77px",
+    "imgMargin": "0 0 0 0"
+    },
+    {
+    "imgName": "img/brand--factory.png",
+    "href": "#",
+    "imgAlt": "factory",
+    "imgWidth": "57px",
+    "imgMargin": "1px 0 0 1px"
+    },
+    {
+    "imgName": "img/brand--pirelli.png",
+    "href": "#",
+    "imgAlt": "pirelli",
+    "imgWidth": "61px",
+    "imgMargin": "1px 0 0 1px"
+    },
+    {
+    "imgName": "img/brand--dunlop.png",
+    "href": "#",
+    "imgAlt": "dunlop",
+    "imgWidth": "72px",
+    "imgMargin": "0 0 0 3px"
+    }
+  ];
+
+console.log("options in script.js = ", $options);
+$(".jq--truescene").trueCarouselPlugin();
+
 //   var $div = $(".jq--truescene");
 //   var $ul = $(".jq--truebackstage");
 //   var l = options.length;
@@ -204,32 +205,7 @@ $(".content").append($content);
 // });
 //
 // // arrowWidthCalc();
-//
-//   for (var i = 0; i < options.length; i++) {
-//     $listItem[i] = $("<li>")
-//       .addClass("jq--truebrand")
-//       .css({
-//         display: "inline-block",
-//         margin: options[i].imgMargin,
-//         marginRight: "12px",
-//         // float: "left"
-//       });
-//
-//     $img[i] = $("<img>")
-//     .attr({
-//       src: options[i].imgName,
-//       alt: options[i].imgAlt
-//     })
-//     .addClass("jq--trueImg")
-//     .css({
-//       width: options[i].imgWidth,
-//       maxWidth: "97px"
-//     });
-//
-//     $ul.append($listItem[i]);
-//     $listItem[i].append($img[i]);
-//   };
-//
+
 //   var $trueLink = $("<a>")
 //   .addClass("jq--trueLink")
 //   .attr({href: options[a].href})
